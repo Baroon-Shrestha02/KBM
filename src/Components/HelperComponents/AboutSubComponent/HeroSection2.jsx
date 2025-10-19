@@ -4,7 +4,7 @@ import { Home } from "lucide-react";
 export default function HeroSection2({ title, description, btnText }) {
   return (
     <section
-      className="relative bg-gray-900 text-white py-20 mt-[10vh] mx-6 rounded-3xl overflow-hidden mt-[12vh]"
+      className="relative bg-gray-900 text-white py-20  mx-6 rounded-3xl overflow-hidden mt-[12vh]"
       style={{
         backgroundImage: `url('/Uploads/home/hero.avif')`,
         backgroundSize: "cover",
