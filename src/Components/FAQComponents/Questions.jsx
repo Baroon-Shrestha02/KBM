@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Plus, Minus } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function Question() {
   const [openIndex, setOpenIndex] = useState(null);
@@ -124,13 +125,9 @@ export default function Question() {
         <div className="w-full lg:w-1/2 flex items-center justify-center bg-white lg:sticky lg:top-0 lg:h-screen mb-8 lg:mb-0">
           <div className="max-w-md p-4 md:p-8 text-center lg:text-left">
             <div className="relative">
-              <div className="absolute -top-10 left-1/2 lg:left-0 -translate-x-1/2 lg:translate-x-0 opacity-50">
-                <img
-                  src="/Uploads/main/logo.png"
-                  alt="Logo"
-                  className="h-[400px] object-contain"
-                />
-              </div>
+              <Link to="/" className="block h-48 w-48 opacity-25">
+                <div className="absolute inset-0 bg-[url('/Uploads/main/logo.png')] bg-contain bg-center bg-no-repeat scale-125"></div>
+              </Link>
 
               {/* Main heading */}
               <div className="relative z-10">

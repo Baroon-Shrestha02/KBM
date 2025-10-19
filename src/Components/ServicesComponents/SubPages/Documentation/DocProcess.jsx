@@ -101,13 +101,6 @@ export default function DocProcess() {
                       {step.description}
                     </p>
                   </div>
-
-                  {/* Arrow for all but last item */}
-                  {/* {idx < steps.length - 1 && (
-                    <div className="absolute top-24 -right-4 transform -translate-y-1/2 z-20">
-                      <ArrowRight className="w-6 h-6 text-gray-400" />
-                    </div>
-                  )} */}
                 </div>
               );
             })}

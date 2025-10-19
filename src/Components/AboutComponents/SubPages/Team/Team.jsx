@@ -5,7 +5,7 @@ import HeroSection2 from "../../../HelperComponents/AboutSubComponent/HeroSectio
 const teamMembers = [
   {
     id: 1,
-    name: "Sarah Johnson",
+    name: "Suman Tamang",
     role: "CEO & Founder",
     image:
       "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=500&h=500&fit=crop",
@@ -14,8 +14,8 @@ const teamMembers = [
   },
   {
     id: 2,
-    name: "Michael Chen",
-    role: "Head of Operations",
+    name: "Rajib Raj Tamang",
+    role: "Managing Director",
     image:
       "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=500&fit=crop",
     description:
@@ -23,8 +23,8 @@ const teamMembers = [
   },
   {
     id: 3,
-    name: "Emma Williams",
-    role: "Lead Travel Designer",
+    name: "Anil Chaudhary",
+    role: "Managing Director",
     image:
       "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=500&h=500&fit=crop",
     description:

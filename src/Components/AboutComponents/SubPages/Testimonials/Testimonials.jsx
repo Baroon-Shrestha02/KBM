@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 export default function Testimonials() {
   const testimonials = [
@@ -111,13 +112,10 @@ export default function Testimonials() {
         <div className="w-full lg:w-1/2 flex items-center justify-center bg-white lg:sticky lg:top-0 lg:h-screen mb-8 lg:mb-0">
           <div className="max-w-md p-4 md:p-8 text-center lg:text-left">
             <div className="relative">
-              <div className="absolute -top-10 left-1/2 lg:left-0 -translate-x-1/2 lg:translate-x-0 opacity-30">
-                <img
-                  src="Main/logo2.png"
-                  alt="Logo"
-                  className="h-[100px] object-contain"
-                />
-              </div>
+              {/* <div className="absolute -top-10 left-1/2 lg:left-0 -translate-x-1/2 lg:translate-x-0 opacity-30"> */}
+              <Link to="/" className="block h-48 w-48 opacity-25">
+                <div className="absolute inset-0 bg-[url('/Uploads/main/logo.png')] bg-contain bg-center bg-no-repeat scale-125"></div>
+              </Link>
 
               {/* Main heading */}
               <div className="relative z-10">

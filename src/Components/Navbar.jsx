@@ -87,13 +87,9 @@ export default function Navbar() {
       >
         <div className="w-full bg-white text-primary px-6">
           <div className="max-w-7xl mx-auto flex items-center justify-between h-20">
-            {/* Logo */}
-            <div className="flex-shrink-0">
-              <Link to="/" className="text-2xl font-bold h-12 w-12">
-                {/* <img src="/Uploads/main/logo.png" alt="" /> */}
-                Logo
-              </Link>
-            </div>
+            <Link to="/" className="relative block h-36 w-36">
+              <div className="absolute inset-0 bg-[url('/Uploads/main/onlylogo.png')] bg-contain bg-center bg-no-repeat scale-125"></div>
+            </Link>
 
             {/* Desktop Navigation */}
             <div className="hidden lg:flex items-center gap-8">
@@ -169,7 +165,6 @@ export default function Navbar() {
                 </button>
               </div>
             </div>
-
             {/* Contact Button */}
             <div className="hidden lg:block">
               <Link to="/contact">
@@ -178,7 +173,6 @@ export default function Navbar() {
                 </button>
               </Link>
             </div>
-
             {/* Mobile Menu Button */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}

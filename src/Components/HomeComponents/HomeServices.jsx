@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const content = [
   {
@@ -12,6 +13,7 @@ const content = [
       "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&q=80",
     description:
       "We provide one-on-one counseling sessions to help students choose the right country, university, and course based on their academic background and career goals. Our experienced counselors ensure you make informed decisions for your future abroad.",
+    href: "/services/career-counseling",
   },
   {
     id: 2,
@@ -22,6 +24,7 @@ const content = [
       "https://images.unsplash.com/photo-1581093588401-22c8d3a1f9c8?w=800&q=80",
     description:
       "From preparing your Statement of Purpose to organizing financial and academic documents, our team ensures that every paper meets embassy and university standards. We guide you through every step of the application process with accuracy and care.",
+    href: "/services/documentation",
   },
   {
     id: 3,
@@ -32,6 +35,7 @@ const content = [
       "https://images.unsplash.com/photo-1600267165946-b441c9c1bb7b?w=800&q=80",
     description:
       "Our experts assist in preparing all necessary visa documents and offer mock interview sessions to build your confidence. We stay updated with the latest immigration rules to ensure a smooth visa approval process.",
+    href: "/services/visa-assistance",
   },
 ];
 
@@ -165,6 +169,11 @@ export default function HomeServices() {
                 <p className="text-gray-700 leading-relaxed text-justify">
                   {currentContent.description}
                 </p>
+                <Link to={currentContent.href}>
+                  <button className="bg-text text-white text-lg font-extrabold px-4 py-1 rounded-sm">
+                    Learn More
+                  </button>
+                </Link>
               </div>
             </motion.div>
           </AnimatePresence>
@@ -278,6 +287,11 @@ export default function HomeServices() {
                   <p className="text-gray-700 leading-relaxed text-sm">
                     {currentContent.description}
                   </p>
+                  <Link to={currentContent.href}>
+                    <button className="bg-text text-white font-lg font-extrabold px-4 py-1 rounded-sm">
+                      Learn More
+                    </button>
+                  </Link>
                 </div>
 
                 {/* Large Background Number */}
